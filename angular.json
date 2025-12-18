@@ -29,6 +29,16 @@
           "options": {
             "tsConfig": "projects/modovo/angular-components/tsconfig.spec.json"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/modovo/angular-components/**/*.ts",
+              "projects/modovo/angular-components/**/*.html"
+            ],
+            "eslintConfig": "projects/modovo/angular-components/eslint.config.js"
+          }
         }
       }
     },
@@ -97,6 +107,16 @@
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/doc/**/*.ts",
+              "projects/doc/**/*.html"
+            ],
+            "eslintConfig": "projects/doc/eslint.config.js"
+          }
         }
       }
     }
